@@ -18,6 +18,7 @@ import sys
 
 import extraWidgets
 
+#the Main Text Area Widget Class
 class Editor(tk.Frame):
     def __init__(self, root, *args, **kwargs):
         # Unable to understand why self is necessary as first argument
