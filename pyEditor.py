@@ -180,6 +180,8 @@ class Editor(tk.Frame):
             self.textpad.tag_configure(str(ttype), foreground=foreground, font=tag_font)
 
     #Function to recolorize according to tags created
+    # Currently this function is very bad as it recolorizes the whole document from
+    # start at every key stroke
     def recolorize(self):
         # print("recolorize")
         code = self.textpad.get("1.0", "end-1c")
