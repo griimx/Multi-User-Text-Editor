@@ -127,3 +127,93 @@ class Notebook(ttk.Notebook):
 
         widget.state(["!pressed"])
         widget.pressed_index = None
+
+class Go_Online(tk.Toplevel):
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        tk.Toplevel.__init__(self, *args, **kwargs)
+        self.root = root
+        _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#d9d9d9' # X11 color: 'gray85'
+        _ana1color = '#d9d9d9' # X11 color: 'gray85' 
+        _ana2color = '#d9d9d9' # X11 color: 'gray85' 
+        font10 = "-family {Segoe UI} -size 9 -weight bold -slant roman"  \
+            " -underline 0 -overstrike 0"
+
+
+
+
+        self.Label1.place(relx=0.18, rely=0.13, height=21, width=184)
+        self.Label1.configure(activebackground="#f9f9f9")
+        self.Label1.configure(activeforeground="black")
+        self.Label1.configure(background=_bgcolor)
+        self.Label1.configure(disabledforeground="#a3a3a3")
+        self.Label1.configure(foreground="#000000")
+        self.Label1.configure(highlightbackground="#d9d9d9")
+        self.Label1.configure(highlightcolor="black")
+        self.Label1.configure(text='''Enter code for collaboration''')
+
+        self.Label3.place(relx=0.33, rely=0.37, height=21, width=94)
+        self.Label3.configure(activebackground="#f9f9f9")
+        self.Label3.configure(activeforeground="black")
+        self.Label3.configure(background="#ffffff")
+        self.Label3.configure(disabledforeground="#a3a3a3")
+        self.Label3.configure(font=font10)
+        self.Label3.configure(foreground="#2333f5")
+        self.Label3.configure(highlightbackground="#d9d9d9")
+        self.Label3.configure(highlightcolor="black")
+
+        self.Button1.place(relx=0.36, rely=0.62, height=24, width=72)
+        self.Button1.configure(activebackground="#d9d9d9")
+        self.Button1.configure(activeforeground="#000000")
+        self.Button1.configure(background=_bgcolor)
+        self.Button1.configure(disabledforeground="#a3a3a3")
+        self.Button1.configure(foreground="#000000")
+        self.Button1.configure(highlightbackground="#d9d9d9")
+        self.Button1.configure(highlightcolor="black")
+        self.Button1.configure(pady="0")
+        self.Button1.configure(text='''Collaborate''')
+
+class Host_Online(tk.Toplevel):
+        '''This class configures and populates the toplevel window.
+           top is the toplevel containing window.'''
+        tk.Toplevel.__init__(self, *args, **kwargs)
+        self.root = root
+        _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
+        _fgcolor = '#000000'  # X11 color: 'black'
+        _compcolor = '#d9d9d9' # X11 color: 'gray85'
+        _ana1color = '#d9d9d9' # X11 color: 'gray85' 
+        _ana2color = '#d9d9d9' # X11 color: 'gray85' 
+        font10 = "-family {Segoe UI} -size 9 -weight bold -slant roman"  \
+            " -underline 0 -overstrike 0"
+
+
+
+
+        self.Label1.place(relx=0.18, rely=0.13, height=21, width=184)
+        self.Label1.configure(activebackground="#f9f9f9")
+        self.Label1.configure(activeforeground="black")
+        self.Label1.configure(background=_bgcolor)
+        self.Label1.configure(disabledforeground="#a3a3a3")
+        self.Label1.configure(foreground="#000000")
+        self.Label1.configure(highlightbackground="#d9d9d9")
+        self.Label1.configure(highlightcolor="black")
+        self.Label1.configure(text='''Enter code for collaboration''')
+
+        self.Label3.place(relx=0.33, rely=0.37, height=21, width=94)
+        self.Label3.configure(activebackground="#f9f9f9")
+        self.Label3.configure(activeforeground="black")
+        self.Label3.configure(background="#ffffff")
+        self.Label3.configure(disabledforeground="#a3a3a3")
+        self.Label3.configure(font=font10)
+        self.Label3.configure(foreground="#2333f5")
+        self.Label3.configure(highlightbackground="#d9d9d9")
+        self.Label3.configure(highlightcolor="black")
+        self.Label3.configure(text='''12gf''')
+
+        self.Label2.place(relx=0.17, rely=0.59, height=21, width=199)
+        self.Label2.configure(background=_bgcolor)
+        self.Label2.configure(disabledforeground="#a3a3a3")
+        self.Label2.configure(foreground="#000000")
+        self.Label2.configure(text='''Share this code to start collaboration''')
